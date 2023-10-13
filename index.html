@@ -4,192 +4,168 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>ziddan web portofolio</title>
-  
-<!-- Fonts from google font -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-
+  <!-- Fonts from google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
   <!-- CSS linking -->
   <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
   <!-- JS linking -->
   <script src="main.js"></script>
-  
- <!--navigation menu-->
-    <nav id="desktop-nav">
-        <div class="logo">Ziddan</div>
-        <div>
-            <ul class="nav-links">
-               <li><a href="#about">About</a></li>
-               <li><a href="#projects">Projects</a></li>
-               <li><a href="#contact">Contact</a></li>
-               <li><a href="#experience">Experience</a></li>
-            </ul>
-            
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Ziddan</div>
-      <div class="hamburger-menu">
-         <div class="hamburger-icon" onclick="toggleMenu()">
-           <span></span>
-           <span></span>
-           <span></span>
+</head>
+<body>
+  <!--navigation menu-->
+  <nav id="desktop-nav">
+    <div class="logo">Ziddan</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#experience">Experience</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">Ziddan</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./resource/IMG-20230312-WA0011-modified.png" alt="Ziddan pic"/>
-      </div>
+    </div>
+
+    <div class="menu-links">
+      <li><a href="#about" onclick="toggleMenu()">About</a></li>
+      <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+      <li><a href="#projects" onclick="toggleMenu()">Projects</a></a></li>
+      <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </div>
+  </nav>
+
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./resource/IMG-20230312-WA0011-modified.png" alt="Ziddan pic"/>
+    </div>
     <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Ziddan Alif</h1>
-        <p class="section__text__p2">Frontend Developer</p>
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Ziddan Alif</h1>
+      <p class="section__text__p2">Frontend Developer</p>
       <div class="btn-container">
-        <button 
-        class="btn btn-color-2" 
-        onclick="window.open('https://drive.google.com/file/d/11S9cdYba5R78TzgvYg_up8tnjmL1Ku_r/view?usp=drivesdk')" target="_blank" rel="noopener">
-          Download CV
-        </button>
-        <button 
-        class="btn btn-color-1" 
-        onclick="location.href='./#contact'">
+        <a href="https://drive.google.com/file/d/11S9cdYba5R78TzgvYg_up8tnjmL1Ku_r/view?usp=drivesdk" target="_blank">
+          <button class="btn btn-color-2"> Download CV </button>
+        </a>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
           Contact info
         </button>
       </div>  
-     <div id="socials-container">
-       <img src="./resource/linkedin.png" alt="My Linkedin Profile"
-       class="icon" onclick="location.href='https://linkedin.com/'" target="_blank" rel="noopener"/>
-       <img src="./resource/github.png" alt="My Github Profile"
-       class="icon" onclick="location.href='https://github.com/lquidcat'" target="_blank" rel"noopener"/>
-       
-       
-       
-     </div>
-    </div>
-      
-    </section>
-    
-      <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      
-      <div class="section-container">
-        <div class="section__pic-container">
-            <img src="/resource/IMG_20231012_231627_872.jpg" alt="Profile Picture" class="about-pic"/>
-        </div>
-        
-          <div class="about-details-container">
-             <div class="about-container">
-                <div class="details-container">
-                  <img src="/resource/experience.png" alt="Experience Icon" class="icon"/>
-                  <h3>Experience</h3>
-                  <p>>1 Month </br> Frontend Development</p>
-                </div>
-                <div class="details-container">
-                <img src="/resource/education.png" alt="Education Icon" class="icon" />
-                <h3>Education</h3>
-                <p>High School </br> Science</p>
-                </div>
-                </div>
-                   <div class="text-container">
-                     <p>Hello I'm a University student trying to learn code </p>
-                   </div>
-          </div>
+      <div id="socials-container">
+        <a href="https://linkedin.com/" target="_blank">
+          <img src="./resource/linkedin.png" alt="My Linkedin Profile"
+        class="icon"/>
+        </a>
+        <a href="https://github.com/lquidcat" target="_blank">
+          <img src="./resource/github.png" alt="My Github Profile"
+          class="icon"/>
+        </a>
       </div>
-      <img src="/resource/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='#experience'"/>
-      
-    </section>
-        
-        
-      <section id="experience">
-        <p class="section__text__p1">
-          Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <h2 class="experience-subtitle">Frontend Development</h2>
-              <div class="article-container">
+    </div>
+  </section>
+  
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="resource/IMG_20231012_231627_872.jpg" alt="Profile Picture" class="about-pic"/>
+      </div>
+      <div class="about-details-container">
+        <div class="about-container">
+          <div class="details-container">
+            <img src="resource/experience.png" alt="Experience Icon" class="icon"/>
+            <h3>Experience</h3>
+            <p>>1 Month </br> Frontend Development</p>
+          </div>
+          <div class="details-container">
+          <img src="resource/education.png" alt="Education Icon" class="icon" />
+          <h3>Education</h3>
+          <p>High School </br> Science</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>Hello I'm a University student trying to learn code </p>
+        </div>
+      </div>
+    </div>
+    <img src="resource/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='#experience'"/>
+  </section>
+
+  <section id="experience">
+    <p class="section__text__p1">
+      Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-subtitle">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="resource/checkmark.png" alt="Experience Icon" class="icon"/>
+              <div>
+                <h3>HTML</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+              <article>
+                <img src="resource/checkmark.png" alt="Experience Icon" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
                 <article>
-                  <img src="/resource/checkmark.png" alt="Experience Icon" class="icon"/>
+                  <img src="resource/checkmark.png" alt="Experience Icon" class="icon" />
                   <div>
-                    <h3>HTML</h3>
+                    <h3>JavaScript</h3>
                     <p>Basic</p>
                   </div>
                 </article>
-                  <article>
-                    <img src="/resource/checkmark.png" alt="Experience Icon" class="icon" />
-                    <div>
-                      <h3>CSS</h3>
-                      <p>Basic</p>
-                    </div>
-                  </article>
-                    <article>
-                      <img src="/resource/checkmark.png" alt="Experience Icon" class="icon" />
-                      <div>
-                        <h3>JavaScript</h3>
-                        <p>Basic</p>
-                      </div>
-                      
-                    </article>
-                 
-                            </div>
-                          </article>
-                
-              </div>
-                <div class="details-container">
-                  <h2 class="experience-subtitle">Backend Development</h2>
-                  <div class="article-container">
-                    <article>
-                      <img src="/resource/checkmark.png" alt="Experience Icon" class="icon" />
-                      <div>
-                        <h3>SQL</h3>
-                        <p>Basic</p>
-                      </div>
-                    </article>
-                    <article>
-                      <img src="/resource/checkmark.png" alt="Experience Icon" class="icon" />
-                      <div>
-                        <h3>GIT</h3>
-                        <p>Basic</p>
-                      </div>
-                    </article>
-                    <article>
-                      <img src="/resource/checkmark.png" alt="Experience Icon" class="icon" />
-                      <div>
-                        <h3>PHP</h3>
-                        <p>Basic</p>
-                      </div>
-              
-                    </article>
-              
-                  </div>
-                  </article>
-              
-                </div>
-            </div>
-            
           </div>
+          </div>
+            <div class="details-container">
+              <h2 class="experience-subtitle">Backend Development</h2>
+              <div class="article-container">
+                <article>
+                  <img src="resource/checkmark.png" alt="Experience Icon" class="icon" />
+                  <div>
+                    <h3>SQL</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="resource/checkmark.png" alt="Experience Icon" class="icon" />
+                  <div>
+                    <h3>GIT</h3>
+                    <p>Basic</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="resource/checkmark.png" alt="Experience Icon" class="icon" />
+                  <div>
+                    <h3>PHP</h3>
+                    <p>Basic</p>
+                  </div>
+                </article> 
+              </div>
+              </article>
+            </div>
         </div>
-         <img src="/resource/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='#experience'"/>
-      
-        
-        
-        
-        
-      </section>
+      </div>
+    </div>
+      <img src="resource/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='#experience'"/>
+  </section>
 </body>
 </html>
